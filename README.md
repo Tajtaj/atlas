@@ -7,7 +7,7 @@ Some of the examples from the articles have been modified slightly to provide mo
 ##Installation
 This theme uses [Libsass](https://github.com/sass/libsass) to compile Sass files. Libsass can be easily installed on [Macs](https://github.com/sass/libsass/wiki/Building-on-Mac-OS-X) and is also available for [Windows](https://github.com/sass/libsass/wiki/Building-on-Windows). You should make sure you have Libsass installed before you proceed.
 
-Next, install dependencies using npm:
+Next, install dependencies using npm by running the following command in the root of your theme folder:
 
 `npm install`
 

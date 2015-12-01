@@ -18,7 +18,7 @@ var imgSrc = './images/src/*';
 var imgDest = './images';
 var svgSrc = './images/svg-src/*';
 var svgDest = './images';
-var sassSrc = './scss/styles.scss';
+var sassSrc = './scss/**/*.scss';
 var sassDest = './css';
 
 gulp.task('sass', function () {
@@ -62,7 +62,8 @@ gulp.task('build', function(callback) {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-  gulp.watch(sassSrc, ['sass', 'cssmin']);
+  gulp.watch(sassSrc, ['sass']);
+  gulp.watch('./css/styles.css', ['cssmin']);
   gulp.watch(imgSrc, ['imagemin']);
   gulp.watch(svgSrc, ['svgmin']);
 });
